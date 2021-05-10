@@ -1,0 +1,12 @@
+[user]
+	name = azurata
+	email = git@azurata.me
+	# signingkey = 
+[core]
+	precomposeunicode = true
+	quotepath = false
+	autocrlf = input
+[commit]
+	# gpgsign = true
+[init]
+	defaultBranch = main
