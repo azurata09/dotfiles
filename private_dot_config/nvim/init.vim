@@ -1,6 +1,8 @@
 source ~/.vim/settings.vim
 source ~/.vim/plugins.vim
 
+set guifont=Cica:h24
+
 let g:python_host_prog = '/Users/azurata/.asdf/installs/python/2.7.18/bin/python'
 let g:python3_host_prog = '/Users/azurata/.asdf/installs/python/3.9.5/bin/python'
 let g:ruby_host_prog = '/Users/azurata/.asdf/shims/neovim-ruby-host'
