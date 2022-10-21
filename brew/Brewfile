@@ -11,6 +11,7 @@ brew "git"
 brew "hugo"
 brew "jq"
 brew "latexindent"
+brew "mas"
 brew "neovim", args: ["HEAD"]
 brew "nkf"
 brew "ranger"
