@@ -1,2 +1,6 @@
+###
+### exclamation-question-mark.rule -- かな入力時に!と?を全角にする
+###
+
 !,！,！,!
 ?,？,？,?
