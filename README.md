@@ -12,3 +12,4 @@ My dotfiles for tool settings.
 - Create some files in the directory
 - Run `stow -v <directory name>`
 - It's done!
+- When delete link, Run `stow -vD <diretory name>`
