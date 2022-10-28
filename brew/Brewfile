@@ -41,3 +41,12 @@ cask "rectangle"
 cask "slidepilot"
 cask "soundflower"
 cask "vlc"
+mas "Xcode", id:497799835
+mas "Kindle", id:405399194
+mas "iMovie", id:408981434
+mas "RunCat", id:1429033973
+mas "Slack", id:803453959
+mas "Todoist", id:585829637
+mas "CotEditor", id:1024640650
+mas "LINE", id:539883307
+mas "Amphetamine", id:937984704
