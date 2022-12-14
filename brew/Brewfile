@@ -3,21 +3,28 @@ tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 brew "asdf"
+brew "cloc"
+brew "cmatrix"
 brew "cocoapods"
 brew "ffmpeg"
 brew "fish"
 brew "fisher"
 brew "git"
+brew "git-lfs"
+brew "gotop"
 brew "hugo"
 brew "jq"
 brew "latexindent"
 brew "mas"
+brew "neofetch"
 brew "neovim", args: ["HEAD"]
 brew "nkf"
 brew "ranger"
+brew "sl"
 brew "stow"
 brew "tmux"
 brew "tree"
+brew "websocat"
 brew "yarn"
 brew "yt-dlp"
 cask "adobe-acrobat-reader"
@@ -27,6 +34,7 @@ cask "aquaskk"
 cask "astah-professional"
 cask "audacity"
 cask "chromium"
+cask "db-browser-for-sqlite"
 cask "devtoys"
 cask "firefox-developer-edition"
 cask "gimp"
@@ -35,18 +43,29 @@ cask "google-chrome"
 cask "inkscape"
 cask "keyboardcleantool"
 cask "mactex-no-gui"
+cask "mos"
 cask "openinterminal"
+cask "postman"
+cask "processing"
 cask "raycast"
 cask "rectangle"
 cask "slidepilot"
 cask "soundflower"
 cask "vlc"
-mas "Xcode", id:497799835
-mas "Kindle", id:405399194
-mas "iMovie", id:408981434
-mas "RunCat", id:1429033973
-mas "Slack", id:803453959
-mas "Todoist", id:585829637
-mas "CotEditor", id:1024640650
-mas "LINE", id:539883307
-mas "Amphetamine", id:937984704
+mas "Alfred", id: 405843582
+mas "Amphetamine", id: 937984704
+mas "BetterSnapTool", id: 417375580
+mas "CotEditor", id: 1024640650
+mas "GarageBand", id: 682658836
+mas "Hidden Bar", id: 1452453066
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "LINE", id: 539883307
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "RunCat", id: 1429033973
+mas "Skitch", id: 425955336
+mas "Slack", id: 803453959
+mas "Todoist", id: 585829637
+mas "Xcode", id: 497799835
