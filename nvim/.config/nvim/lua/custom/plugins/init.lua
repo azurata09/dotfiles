@@ -1,13 +1,19 @@
 return {
-  ["gpanders/editorconfig.nvim"] = {},
+  ["vim-denops/denops.vim"] = {},
+  ["vim-skk/skkeleton"] = {},
 
-  ["nvim-tree/nvim-tree.lua"] = {
-    open_on_setup = false
+  ["nvim-tree"] = {
+    override_options = {
+      open_on_setup = true,
+      open_on_setup_file = true
+    }
   },
 
   ["NvChad/ui"] = {
-    statusline = {
-      separator_style = "arrow"
-    },
-  },
+    override_options = {
+      statusline = {
+        separator_style = "arrow"
+      }
+    }
+  }
 }

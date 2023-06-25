@@ -4,18 +4,8 @@ M.ui = {
   theme = "monekai",
 }
 
-M.plugins = {
-  ["gpanders/editorconfig.nvim"] = false,
+M.plugins = require("custom.plugins")
 
-  ["nvim-tree/nvim-tree.lua"] = {
-    open_on_setup = false
-  },
-
-  ["NvChad/ui"] = {
-    statusline = {
-      separator_style = "arrow"
-    },
-  },
-}
+M.mappings = require("custom.mappings")
 
 return M
