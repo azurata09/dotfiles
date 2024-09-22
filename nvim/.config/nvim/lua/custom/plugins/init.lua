@@ -9,6 +9,7 @@ return {
     }
   },
 
+  --[[
   ["NvChad/ui"] = {
     override_options = {
       statusline = {
@@ -16,4 +17,5 @@ return {
       }
     }
   }
+  --]]
 }
