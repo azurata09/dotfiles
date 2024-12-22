@@ -28,7 +28,7 @@ size = 22
 [font.normal]
 family = "HackGen Console NF"
 
-[shell]
+[terminal.shell]
 program = "/usr/local/bin/tmux"
 
 [window]
@@ -39,3 +39,5 @@ startup_mode = "Windowed"
 [window.padding]
 x = 0
 y = 0
+
+[terminal]
