@@ -1,3 +1,4 @@
 brackets.rule かな入力時に{}を『』にする
 exclamation-question-mark.rule かな入力時に!と?を全角にする
 colons.rule コロンとセミコロンを半角にする
+kakko-zenkaku.rule かな入力時にかっこを全角にする
