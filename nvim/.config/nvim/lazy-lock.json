@@ -1,0 +1,8 @@
+{
+  "ddc.vim": { "branch": "main", "commit": "653546fc1b85c5a7d1674f930d096b4467ebdb95" },
+  "denops.vim": { "branch": "main", "commit": "29e830de41f1b02e6381960392cdf2e0226dbf4e" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "nvim-tree.lua": { "branch": "master", "commit": "6b5b36659688767fb9f133bb83024ab1466fe5cd" },
+  "nvim-web-devicons": { "branch": "master", "commit": "4a8369f4c78ef6f6f895f0cec349e48f74330574" },
+  "skkeleton": { "branch": "main", "commit": "4412cfb90cd4dab8c03d8df88660f857fad370c2" }
+}
