@@ -29,7 +29,8 @@ size = 22
 family = "HackGen Console NF"
 
 [terminal.shell]
-program = "/usr/local/bin/tmux"
+program = "/bin/zsh"
+args = ["--login"]
 
 [window]
 decorations = "full"
