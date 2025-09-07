@@ -1,8 +1,9 @@
 {
-  "ddc.vim": { "branch": "main", "commit": "653546fc1b85c5a7d1674f930d096b4467ebdb95" },
-  "denops.vim": { "branch": "main", "commit": "29e830de41f1b02e6381960392cdf2e0226dbf4e" },
+  "ddc.vim": { "branch": "main", "commit": "206c28876b4501db45b66318f658856c2fd14a1c" },
+  "denops.vim": { "branch": "main", "commit": "b0ee649d8767d46f8f9ae7c49425dce969f2c0c8" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
-  "nvim-tree.lua": { "branch": "master", "commit": "6b5b36659688767fb9f133bb83024ab1466fe5cd" },
-  "nvim-web-devicons": { "branch": "master", "commit": "4a8369f4c78ef6f6f895f0cec349e48f74330574" },
-  "skkeleton": { "branch": "main", "commit": "4412cfb90cd4dab8c03d8df88660f857fad370c2" }
+  "nvim-tree.lua": { "branch": "master", "commit": "321bc61580fd066b76861c32de3319c3a6d089e7" },
+  "nvim-web-devicons": { "branch": "master", "commit": "c2599a81ecabaae07c49ff9b45dcd032a8d90f1a" },
+  "skkeleton": { "branch": "main", "commit": "e60d2a1d5b3372f3fa2bf087fc76c85e56afc955" },
+  "vimtex": { "branch": "master", "commit": "6fabe8b7b5e83f753eb930036b1d941b2f7d3d4d" }
 }
