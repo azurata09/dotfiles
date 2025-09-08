@@ -5,6 +5,5 @@
   "nvim-tree.lua": { "branch": "master", "commit": "321bc61580fd066b76861c32de3319c3a6d089e7" },
   "nvim-web-devicons": { "branch": "master", "commit": "6e51ca170563330e063720449c21f43e27ca0bc1" },
   "skkeleton": { "branch": "main", "commit": "42b7b62062e5eb4ba157b9e8d12a104777bbd9b3" },
-  "skkeleton_indicator.nvim": { "branch": "v2", "commit": "f08532787cf842b996c8a5065be7e85cd3376c1f" },
-  "vimtex": { "branch": "master", "commit": "dc90feacb86f7b85b0b791d8073eefc769a23725" }
+  "skkeleton_indicator.nvim": { "branch": "v2", "commit": "f08532787cf842b996c8a5065be7e85cd3376c1f" }
 }
