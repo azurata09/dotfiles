@@ -8,8 +8,11 @@ My dotfiles for tool settings.
 
 # How to use
 
-- Create a directory with name like tool name
-- Create some files in the directory
-- Run `stow -v <directory name>`
-- It's done!
-- When delete link, Run `stow -vD <diretory name>`
+1. Create a directory with name like tool name
+2. Create some files in the directory
+3. Run `stow -v <directory name>`
+
+It's done!
+
+When you wanna delete link, run `stow -vD <diretory name>`.
+
