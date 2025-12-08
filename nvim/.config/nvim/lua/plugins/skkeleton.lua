@@ -1,15 +1,15 @@
 return {
-  "vim-skk/skkeleton",
+  'vim-skk/skkeleton',
   dependencies = {
-  "vim-denops/denops.vim",
-  "Shougo/ddc.vim"
+  'vim-denops/denops.vim',
+  'Shougo/ddc.vim'
   },
   lazy = false,
   config = function()
     vim.cmd([[ call skkeleton#config({
     \ 'globalDictionaries': [
     \   '~/.skk/SKK-JISYO.L',
-    \   '~/Library/Application Support/AquaSKK/skk-jisyo.utf8', 
+    \   '~/Library/Application Support/AquaSKK/skk-jisyo.utf8',
     \  ],
     \ 'completionRankFile': '~/.skk/rank.json',
     \ 'eggLikeNewline': v:true,
@@ -28,6 +28,13 @@ return {
     \ 'isVolatile': v:true,
     \ 'minAutoCompleteLength': 1
     \ }})]])
+    vim.cmd([[ call skkeleton#register_kanatable('rom', {
+      \ ',': ['，', ''],
+      \ '.': ['．', ''],
+      \ '(': ['（', ''],
+      \ ')': ['）', '']
+      \ })
+    ]])
     vim.cmd( [[call ddc#enable()]])
     vim.cmd([[ call ddc#custom#patch_global('ui', 'pum')]])
   end,
