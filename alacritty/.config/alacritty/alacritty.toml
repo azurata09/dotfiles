@@ -1,44 +1,53 @@
-[colors.bright]
-black = "#484c52"
-blue = "#96b1c9"
-cyan = "#9fc9c3"
-green = "#dffebe"
-magenta = "#bfa5c7"
-red = "#d27c7b"
-white = "#fcf7e2"
-yellow = "#f0d189"
-
-[colors.normal]
-black = "#35383b"
-blue = "#7693ac"
-cyan = "#749e99"
-green = "#769972"
-magenta = "#977ba0"
-red = "#b05655"
-white = "#848b92"
-yellow = "#e1a574"
-
-[colors.primary]
-background = "#27292c"
-foreground = "#d0d2d1"
-
 [font]
-size = 22
+size = 20
 
 [font.normal]
-family = "HackGen Console NF"
+family = "UDEV Gothic NF"
 
 [terminal.shell]
 program = "/bin/zsh"
 args = ["--login"]
 
 [window]
-decorations = "full"
 dynamic_title = true
 startup_mode = "Windowed"
+# decorations = "Transparent"
+decorations = "Full"
+opacity = 0.75
 
 [window.padding]
-x = 0
-y = 0
+# x = 4
+# y = 4
 
-[terminal]
+# -----------------------------------------------------------------------------
+# TokyoNight Alacritty Colors
+# Theme: Tokyo Night
+# Upstream: https://github.com/folke/tokyonight.nvim/raw/main/extras/alacritty/tokyonight_night.toml
+# -----------------------------------------------------------------------------
+
+# Default colors
+[colors.primary]
+background = '#1a1b26'
+foreground = '#c0caf5'
+
+# Normal colors
+[colors.normal]
+black = '#15161e'
+red = '#f7768e'
+green = '#9ece6a'
+yellow = '#e0af68'
+blue = '#7aa2f7'
+magenta = '#bb9af7'
+cyan = '#7dcfff'
+white = '#a9b1d6'
+
+# Bright colors
+[colors.bright]
+black = '#414868'
+red = '#ff899d'
+green = '#9fe044'
+yellow = '#faba4a'
+blue = '#8db0ff'
+magenta = '#c7a9ff'
+cyan = '#a4daff'
+white = '#c0caf5'
