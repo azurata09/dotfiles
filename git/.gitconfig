@@ -7,7 +7,6 @@
 	quotepath = false
 	autocrlf = input
 	ignorecase = false
-	editor = /opt/homebrew/bin/nvim
 [commit]
 	# gpgsign = true
 [init]
