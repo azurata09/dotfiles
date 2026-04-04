@@ -12,6 +12,10 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+vim.opt.expandtab = true -- Soft Tab
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+
 if vim.g.neovide then
   vim.o.guifont = "UDEV Gothic NF:h20" -- text below applies for VimScript
   vim.g.neovide_opacity = 0.75
