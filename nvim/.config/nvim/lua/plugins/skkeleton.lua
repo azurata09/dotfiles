@@ -29,8 +29,6 @@ return {
     \ 'minAutoCompleteLength': 1
     \ }})]])
     vim.cmd([[ call skkeleton#register_kanatable('rom', {
-      \ ',': ['，', ''],
-      \ '.': ['．', ''],
       \ '(': ['（', ''],
       \ ')': ['）', '']
       \ })
@@ -39,4 +37,8 @@ return {
     vim.cmd([[ call ddc#custom#patch_global('ui', 'pum')]])
   end,
 }
+
+-- 論文執筆時の設定
+--       \ ',': ['，', ''],
+--       \ '.': ['．', ''],
 
