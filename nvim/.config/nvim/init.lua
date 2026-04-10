@@ -1,9 +1,9 @@
 require("config.lazy")
 require("keymap")
 
-vim.opt.number = true
-
-vim.opt.clipboard:append({"unnamedplus"})
+vim.opt.number = true -- Add line number
+vim.opt.swapfile = false -- Unable swap
+vim.opt.clipboard:append({"unnamedplus"}) -- Sync between clipboard and buffer
 
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "*tex",
