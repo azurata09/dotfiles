@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+ls | fzf -m | xargs -I {} open "{}"
+

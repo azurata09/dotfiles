@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+history -n 0 | fzf | pbcopy
+
