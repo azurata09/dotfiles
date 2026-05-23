@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+# 引数のチェック
+if [ "$#" -ne 4 ]; then
+    echo "Usage: pdfslice <input> <start_page> <end_page> <output>"
+    exit 1
+fi
+
+INPUT=$1
+START=$2
+END=$3
+OUTPUT=$4
+
+qpdf "$INPUT" --pages . "$START"-"$END" -- "$OUTPUT"
+
