@@ -9,5 +9,5 @@ function fzgrep() {
         --preview 'cat `echo {} | cut -f 1 --delim ":"`'
 }
 
-fzgrep()
+fzgrep
 
