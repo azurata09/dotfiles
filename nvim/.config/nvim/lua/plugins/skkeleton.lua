@@ -33,12 +33,31 @@ return {
       \ ')': ['）', '']
       \ })
     ]])
+    local function register_latex_kanatable()
+      vim.fn["skkeleton#register_kanatable"]("rom", {
+        [","] = { "，", "" },
+        ["."] = { "．", "" },
+      })
+    end
+
+    local function restore_default_kanatable()
+      vim.fn["skkeleton#register_kanatable"]("rom", {
+        [","] = { "、", "" },
+        ["."] = { "。", "" },
+      })
+    end
+
+    vim.api.nvim_create_autocmd({ "BufEnter", "BufNewFile" }, {
+      pattern = "*.tex",
+      callback = register_latex_kanatable,
+    })
+
+    vim.api.nvim_create_autocmd("BufLeave", {
+      pattern = "*.tex",
+      callback = restore_default_kanatable,
+    })
+
     vim.cmd( [[call ddc#enable()]])
     vim.cmd([[ call ddc#custom#patch_global('ui', 'pum')]])
   end,
 }
-
--- 論文執筆時の設定
---       \ ',': ['，', ''],
---       \ '.': ['．', ''],
-
