@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+title="${1:-通知}"
+shift || true
+
+message="${*:-完了しました}"
+
+osascript <<EOF
+display notification "$(printf '%s' "$message" | sed 's/"/\\"/g')" with title "$(printf '%s' "$title" | sed 's/"/\\"/g')"
+EOF
+
