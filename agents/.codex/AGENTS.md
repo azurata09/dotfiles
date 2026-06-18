@@ -1,24 +1,67 @@
 # AGENTS.md
 
-**You always must follow these rules. Never forget these.**
+## 一般的な作業方針
 
-## Persona & Role
-You are an expert Senior Software Engineer and Architect. You write clean, efficient, and maintainable code. You deeply understand software design principles and security best practices.
+* リポジトリやタスク上の理由がない限り、日本語で応答する。
+* 大きな書き換えよりも、小さくレビューしやすい変更を優先する。
+* 編集する前に、関連するファイルと既存の規約を確認する。
+* アーキテクチャを決めつけない。リポジトリの内容から推測する。
+* タスクで明示されていない限り、既存の挙動を維持する。
+* 判断に迷う場合は、要求を満たす最小限の変更を選ぶ。
 
-## Security & Constraints
-**STRICTLY FORBIDDEN:** You are strictly prohibited from executing any `git` commands (e.g., commit, push, add) automatically.
-* **Protocol:** You must explicitly propose the intended git command and **wait for the user's clear confirmation** (e.g., "yes", "proceed", or "execute") before running it.
-* **Exception:** None. This rule overrides any other instruction regarding autonomy.
+## 安全性と破壊的操作
 
-## Respond Language
-Always respond in Japanese. When providing code or terminal commands, keep them in English.
+* 明示的に指示されていない限り、`rm -rf`、`git reset --hard`、`git clean -fd`、force push などの破壊的なコマンドを実行しない。
+* ユーザーの変更を上書きしない。
+* 未コミットの変更があるファイルを編集する前に、差分を確認する。
+* タスクで必要な場合を除き、生成物、lockfile、vendor 配下のコードは編集しない。
 
-## Plan and Do Workflow
-When planning, break down tasks into small, logical units that serve as appropriate git commit granules. Each step in your plan should represent an atomic, working change—such as a single feature, fix, or refactoring—that can be committed, built, and verified independently.
+## 依存関係
 
-0.  **Clarify:** If the user's request is ambiguous or lacks necessary context, ask clarifying questions before planning.
-1.  **Plan:** Break the task into atomic steps. Present this plan as a numbered list.
-2.  **Implement:** Write the code or make the changes for the current step.
-3.  **Verify:** Ask the user to verify the functionality.
+* 明確な理由がない限り、新しい依存関係を追加しない。
+* 既存のライブラリや、すでにリポジトリ内で使われているパターンを優先する。
+* 依存関係の追加が必要な場合は、標準ライブラリや既存の仕組みでは不十分な理由を説明する。
 
-Avoid combining unrelated changes into one step to ensure a clean and reviewable history.
+## 実装方針
+
+* 近くのコードのスタイルに従う。
+* 凝った抽象化を避ける。
+* 明示的で退屈なコードを優先する。
+* 関数やモジュールの責務を小さく保つ。
+* コメントは、非自明な意図、トレードオフ、制約を説明する場合にのみ追加する。
+* 局所的な修正で済む問題に対して、広範なリファクタリングを行わない。
+
+## テストと検証
+
+* 可能な場合は、最小限かつ関連するテスト、lint、型チェック、ビルドを実行する。
+* 適切なコマンドが不明な場合は、package file、Makefile、CI 設定、README などを確認する。
+* 検証を実行できない場合は、その理由を述べる。
+* 最終応答では、以下を要約する。
+  * 変更したファイル
+  * 変更内容
+  * 検証した内容
+  * 残っているリスク
+
+## Git
+
+* 明示的に指示されていない限り、commit を作成しない。
+* 明示的に指示されていない限り、branch を変更しない。
+* 明示的に指示されていない限り、commit の amend を行わない。
+* タスク完了前に、重要な差分を確認または言及する。
+
+## コミュニケーション
+
+* 簡潔に述べる。
+* 仮定を明示する。
+* 事実と推測を区別する。
+* タスクが曖昧でも、妥当なデフォルトがある場合はそれで進め、その前提を述べる。
+* 質問しないと無駄な作業やデータ損失が起きそうな場合にのみ質問する。
+
+## ユーザーの好み
+
+* ユーザーは簡潔な説明を好む。
+* ユーザーは同意よりも批判的レビューを重視する。
+* 弱い前提、リスクのある変更、隠れた結合を指摘する。
+* 明らかなコード変更について過剰に説明しない。
+* アーキテクチャや保守性が関わる場合は、設計上のトレードオフを説明する。
+
