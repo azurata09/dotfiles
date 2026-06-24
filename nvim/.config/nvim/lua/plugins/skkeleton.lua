@@ -1,5 +1,6 @@
 return {
   'vim-skk/skkeleton',
+  cond = not vim.g.vscode,
   dependencies = {
   'vim-denops/denops.vim',
   'Shougo/ddc.vim'

@@ -1,5 +1,6 @@
 return {
   "nvim-tree/nvim-tree.lua",
+  cond = not vim.g.vscode,
   version = "*",
   lazy = false,
   dependencies = {
@@ -9,4 +10,3 @@ return {
     require("nvim-tree").setup {}
   end,
 }
-
