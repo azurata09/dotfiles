@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+# 引数のチェック
+if [ "$#" -ne 1 ]; then
+    echo "Usage: png2heic <input.heic>"
+    exit 1
+fi
+
+
+magick convert $1 ${1%.*}.png
+
