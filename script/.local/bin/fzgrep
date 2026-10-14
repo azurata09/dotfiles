@@ -6,7 +6,7 @@ function fzgrep() {
   FZF_DEFAULT_COMMAND="$RG_PREFIX '$INITIAL_QUERY'" \
     fzf --bind "change:reload:$RG_PREFIX {q} || true" \
         --ansi --phony --query "$INITIAL_QUERY" \
-        --preview 'cat `echo {} | cut -f 1 --delim ":"`'
+        --preview 'cat `echo {} | cut -f 1 -d ":"`'
 }
 
 fzgrep
