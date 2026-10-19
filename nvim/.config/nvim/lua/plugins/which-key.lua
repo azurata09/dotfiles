@@ -1,11 +1,21 @@
 return {
   "folke/which-key.nvim",
   event = "VeryLazy",
-  opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
-  },
+
+    opts = {
+      preset = "modern",
+      win = {
+        border = "rounded",
+        row = 0.5,
+        col = 0.5,
+        no_overlap = false,
+        padding = { 1, 2 },
+      },
+      layout = {
+        width = { min = 20 },
+        spacing = 3,
+      },
+    },
   keys = {
     {
       "<leader>?",
